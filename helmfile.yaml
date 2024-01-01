@@ -1,0 +1,14 @@
+repositories:
+  - name: bitnami
+    url: registry-1.docker.io/bitnamicharts
+    oci: true
+
+releases:
+  - name: keycloak
+    chart: oci://registry-1.docker.io/bitnamicharts/keycloak
+    version: 18.0.0
+    namespace: keycloak
+    installed: true
+    values:
+      - values.yaml
+
